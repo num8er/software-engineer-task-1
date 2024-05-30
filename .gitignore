@@ -1,0 +1,6 @@
+node_modules
+.DS_STORE
+.idea
+database.sqlite3
+database_test.sqlite3
+coverage

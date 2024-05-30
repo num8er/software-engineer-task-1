@@ -1,0 +1,29 @@
+### Get Contract by ID
+GET {{host}}/contracts/1
+profile_id: 1
+
+### Get Contracts  of user
+GET {{host}}/contracts
+profile_id: 1
+
+### Get Unpaid jobs for user
+GET {{host}}/jobs/unpaid
+profile_id: 1
+
+### Get Unpaid jobs for user
+POST {{host}}/jobs/2/pay
+profile_id: 1
+
+### Deposit money to user account
+POST {{host}}/balances/deposit/1
+Content-Type: application/json
+
+{
+  "amount": 100
+}
+
+### Get best clients for a given period
+GET {{host}}/admin/best-clients?start=2020-01-01&end=2021-01-01&limit=2
+
+### Get best profession for a given period
+GET {{host}}/admin/best-profession?start=2020-01-01&end=2021-01-01
